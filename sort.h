@@ -19,11 +19,13 @@ typedef struct listint_s
 listint_t *create_listint(const int *array, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-void swap_func(int *x, int *y);
+void swap(int *val1, int *val2);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+int partition(int *array, size_t size, int low, int high);
+void partition_sort(int *array, size_t size, int low, int high);
 void sortedInsert(listint_t** head_ref, listint_t* newNode);
 
 
